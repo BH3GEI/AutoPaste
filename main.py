@@ -1,5 +1,5 @@
 import pyperclip
-from pykeyboard import pykeyboard
+from pykeyboard import PyKeyboard
 import re
 import sys
 import os
@@ -7,7 +7,7 @@ import time
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
-def autoPaste()
+def autoPaste():
     time.sleep(0.5)
     k = PyKeyboard()
     k.press_key(k.control_key)
@@ -22,7 +22,4 @@ while True:
     if string != question and string != '':
         print([string])
         question = string
-
-autoPaste()
-while True:
-    time.sleep(0.5)
+        autoPaste()
